@@ -1,0 +1,28 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  }
+
+
+
+textarea{
+  height: 150px;
+  }
+
+
+.second-line{
+  display: flex;
+  flex-direction: row;
+  gap: 10%
+  }

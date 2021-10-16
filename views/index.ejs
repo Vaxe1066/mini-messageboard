@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <div class="second-line">
+      <p>Welcome to <%= title %></p>
+      <a href="/new"><img src='/images/plus.svg' alt="add new message" ></a>
+    </div>
+
+
+    <ul>
+      <% for(let i=0; i<messages.length; ++i) { %>
+        <% let message = messages[i] %>
+        <li><%= message.user %></li>
+        <li><%= message.text %></li>
+        <li><%= message.added %></li>
+        <br><br>
+      <% } %>
+    </ul>
+  </body>
+</html>
